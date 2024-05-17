@@ -1,33 +1,30 @@
-# Lab 10 - Race Track
+# # F1 Race
+The F1 Race application is a Java-based program that simulates a Formula 1 race. It provides a graphical interface where users can observe cars racing on a track, complete with a semaphore indicating the start of the race. The application incorporates sound effects to enhance the racing experience and offers dynamic updates as the race progresses.
 
-## Introduction
-In this lab, you will develop a simple race simulation game using threads.
+#Key Features
+Graphical Interface: The application provides a visually appealing interface where users can observe cars racing on a track. Cars are represented by graphical icons moving horizontally to simulate movement.
 
-## Exercise 1
-Execute the Semaphore application and observe how a thread is created and started.
+Semaphore Control: A semaphore is used to signal the start of the race. Users can observe the semaphore changing colors, indicating the status of the race (red for stop, yellow for prepare, green for go).
 
-![Image](/docs/semaphor.png)
+Sound Effects: Sound effects are integrated into the application to provide auditory feedback to users. The sounds include the starting signal and background race ambiance.
 
-## Exercise 2
-Examine the CarRace class and determine what is missing and which instructions need to be added in order to initiate a race for four cars that are created and ready to compete.
+Dynamic Updates: As the race progresses, the application dynamically updates the positions of the cars on the track, providing a real-time racing experience.
 
-![Image](/docs/race.png)
+Race Completion: Upon completion of the race, the application displays a message indicating the winning car, enhancing user engagement and providing closure to the racing experience.
 
-## Exercise 3
-Integrate Semaphore and CarRace so that the race begins when the semaphore turns green (i.e., when the Semaphore thread finishes execution). To implement this exercise, you will utilize the join() method.
+##Usage
+Starting the Race: Launch the application to start the race simulation. Observe the graphical interface to view cars racing on the track.
 
-Starting with this exercise, work within the raceapp package. Copy the classes from the racedemo package into the raceapp package and make any necessary modifications.
+Semaphore Control: Pay attention to the semaphore to understand the status of the race. Green indicates the race has started, while red indicates it has stopped.
 
-## Exercise 4
-Modify the application from Exercise 3 so that a sound starts playing when the cars begin racing and stops when all cars have finished. Project incorporate a sample audio file you can play and an example PlaySound class playing a sound.
+Sound Effects: Listen to the sound effects integrated into the application, including the starting signal and background race ambiance.
 
-## Exercise 6
-Incorporate a mechanism to detect and display (in text or graphical mode) the standings after the race has concluded and the race duration for each car.
+Race Progression: Watch as the cars move dynamically on the track, providing a realistic racing experience. Track the progress of each car as it moves towards the finish line.
 
-## Exercise 7
-Develop a thread that increments a timer (long variable) every 10 milliseconds. This thread will start when the race begins and stop when the race ends. Once the timer is stopped, display the measured time.
+Race Completion: After the race ends, observe the message displayed by the application indicating the winning car. Reflect on the race experience and enjoy the conclusion.
 
-
-
-
-
+##Technologies Used
+Java
+Java Swing (for the graphical user interface)
+AudioSystem and Clip (for sound effects)
+Threading (for simulating multiple cars racing simultaneously)
